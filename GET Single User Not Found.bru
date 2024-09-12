@@ -1,0 +1,15 @@
+meta {
+  name: GET Single User Not Found
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://reqres.in/api/users/23
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 404
+}

@@ -1,0 +1,16 @@
+meta {
+  name: GET List of Users
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://reqres.in/api/users
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res("data[0].email"): eq "michael.lawson@reqres.in"
+}
