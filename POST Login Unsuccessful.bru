@@ -1,0 +1,17 @@
+meta {
+  name: POST Login Unsuccessful
+  type: http
+  seq: 14
+}
+
+post {
+  url: https://reqres.in/api/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "peter@klaven"
+  }
+}

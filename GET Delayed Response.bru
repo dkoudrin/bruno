@@ -1,0 +1,15 @@
+meta {
+  name: GET Delayed Response
+  type: http
+  seq: 15
+}
+
+get {
+  url: https://reqres.in/api/users?delay=3
+  body: none
+  auth: none
+}
+
+params:query {
+  delay: 3
+}
