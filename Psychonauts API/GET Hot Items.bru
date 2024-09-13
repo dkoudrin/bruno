@@ -1,0 +1,15 @@
+meta {
+  name: GET Hot Items
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://boardgamegeek.com/xmlapi2/hot?type=boardgame
+  body: none
+  auth: none
+}
+
+params:query {
+  type: boardgame
+}

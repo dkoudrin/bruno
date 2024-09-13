@@ -1,0 +1,15 @@
+meta {
+  name: GET Plays for User
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://boardgamegeek.com/xmlapi2/plays?username=srsmith93
+  body: none
+  auth: none
+}
+
+params:query {
+  username: srsmith93
+}
